@@ -29,8 +29,7 @@
       h1 { display: inline; padding: .25rem .75rem; margin: 0; font-variant: small-caps; color: rgb(255,255,255); background-color: rgb(238,51,34) }
       h1 > span, .bookmarklet > span { font-weight: 400 }
       h2 { position: relative; top: -5px; display: inline; margin-left: 10px; font-size: 1rem; font-style: italic; font-weight: 400 }
-      .st_twitter_hcount, .st_facebook_hcount { position: relative !important; top: -2px; }
-      .st_twitter_hcount { margin-left: 10px; }
+      .twitter-share-button { position: relative !important; top: 5px; margin-left: 10px; }
       p { font-family: Arial, sans-serif; line-height: 2rem }
       p:first-of-type, .cta { margin-top: 20px }
       .cta { font-size: .8rem; text-align: center; margin-bottom: 30px }
@@ -41,16 +40,42 @@
       img { margin-bottom: 20px }
       li { font-family: Arial, sans-serif; margin-bottom: 10px }
     </style>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "83f9790b-6a02-4917-8ba2-53912e1e6730", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+    <script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+       
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+       
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=204393139618526";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <div class="wrapper">
       <h1><span>B</span>uzz<span>M</span>inus</h1>
       <h2>BuzzFeed listicles, minus the GIFs
-        <span class='st_twitter_hcount' displayText='Tweet'></span>
-        <span class='st_facebook_hcount' displayText='Facebook'></span>
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+        <div class="fb-share-button" data-href="http://stephensuen.com/buzzminus/" data-layout="button_count"></div>
       </h2>
       <p>Do you enjoy reading list-based articles on BuzzFeed.com?<br>
         Ever wish you could get those irritating animated Graphics Interchange Formats&trade; out of the way?<br>
