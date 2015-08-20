@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BuzzMinus</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="BuzzFeed listicles, minus the gifs">
+
+    <link rel="canonical" href="http://s2tephen.github.io/buzzminus/">
+    <link rel="icon" href="favicon.ico">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="BuzzMinus">
+    <meta name="twitter:description" content="BuzzFeed listicles, minus the gifs">
+    <meta name="twitter:creator" content="@s2tephen">
+    <meta name="twitter:image" content="logo.png">
+
+    <meta property="og:url" content="http://s2tephen.github.io/buzzminus/">
+    <meta property="og:title" content="BuzzMinus">
+    <meta property="og:description" content="BuzzFeed listicles, minus the gifs">
+    <meta property="og:image" content="logo.png">
+
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 40px; font-family: "Montserrat", Arial, sans-serif }
+      .wrapper { width: 60%; margin: auto }
+      h1 { display: inline; padding: .25rem .75rem; margin: 0; font-variant: small-caps; color: rgb(255,255,255); background-color: rgb(238,51,34) }
+      h1 > span, .bookmarklet > span { font-weight: 400 }
+      h2 { position: relative; top: -5px; display: inline; margin-left: 10px; font-size: 1rem; font-style: italic; font-weight: 400 }
+      .st_twitter_hcount, .st_facebook_hcount { position: relative !important; top: -2px; }
+      .st_twitter_hcount { margin-left: 10px; }
+      p { font-family: Arial, sans-serif; line-height: 2rem }
+      p:first-of-type, .cta { margin-top: 20px }
+      .cta { font-size: .8rem; text-align: center; margin-bottom: 30px }
+      .bookmarklet { position: relative; top: 5px; padding: .25rem .5rem; margin-right: 20px; font-family: "Montserrat", Arial, sans-serif; font-size: 1.4rem; font-weight: 700; text-decoration: none; font-variant: small-caps; color: rgb(0,0,0); background: rgb(221,221,221); border: 1px solid rgb(204,204,204); box-shadow: .25rem .25rem .5rem .1rem rgba(0,0,0,.1) }
+      .credit { padding-top: 10px; margin-top: 30px; margin-bottom: 20px; font-size: .8rem; line-height: 1rem; color: rgb(153,153,153); border-top: 1px solid rgb(204,204,204) }
+      h3, img { float: left; width: 50% }
+      h3 { margin-top: 0; text-align: center; text-transform: uppercase; color: rgb(238,51,34) }
+      img { margin-bottom: 20px }
+      li { font-family: Arial, sans-serif; margin-bottom: 10px }
+    </style>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "83f9790b-6a02-4917-8ba2-53912e1e6730", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h1><span>B</span>uzz<span>M</span>inus</h1>
+      <h2>BuzzFeed listicles, minus the GIFs
+        <span class='st_twitter_hcount' displayText='Tweet'></span>
+        <span class='st_facebook_hcount' displayText='Facebook'></span>
+      </h2>
+      <p>Do you enjoy reading list-based articles on BuzzFeed.com?<br>
+        Ever wish you could get those irritating animated Graphics Interchange Formats&trade; out of the way?<br>
+        With BuzzMinus, you can have the distraction-free reading experience you've always wanted.<br>
+        Forget the GIFs and focus on the writing itself — read BuzzFeed the way it was intended.</p>
+      <p class="cta"><a class="bookmarklet" href="javascript:(function(){var o='';var i=0;$$('h2').each(function(el){var n=el.firstDescendant();if(n===null){return}else if(n.hasClassName('buzz_superlist_number_inline')){o+=el.innerHTML.slice(n.outerHTML.length);i++;if(i>5){o+='</p><p>';i=0}}});$$('.suplist_list_show')[0].update('<p>'+o.slice(1)+'</p>')})();"><span>B</span>uzz<span>M</span>inus</a> &larr; drag this button to your bookmarks bar</p>
+      <p>Click this bookmarklet on any standard BuzzFeed list and the GIFs will disappear. What remains... is poetry:</p>
+      <h3>Before</h3>
+      <h3>After</h3>
+      <img src="buzzplus.png">
+      <img src="buzzminus.png">
+      <p>You see? Much better. Some articles for you to try:</p>
+      <ul>
+        <li><a href="//www.buzzfeed.com/erinchack/oddly-satisying-gifs-you-wont-be-able-to-stop-watching">21 Oddly Satisfying GIFs You Won’t Be Able To Stop Watching</a></li>
+        <li><a href="//www.buzzfeed.com/tracyclayton/22-animals-who-are-like-yaaaaaaas">22 Animals Who Are Like YAAAAAAAS!</a></li>
+        <li><a href="//www.buzzfeed.com/daves4/unexplainable-stock-photos">50 Completely Unexplainable Stock Photos No One Will Ever Use</a></li>
+        <li><a href="//www.buzzfeed.com/ariannarebolini/tumblr-posts-that-prove-you-are-not-alone">23 Tumblr Posts That Prove You Are Not Alone</a></li>
+        <li>Got any others? Send your best to me at <a href="//twitter.com/intent/tweet?screen_name=s2tephen">@s2tephen</a>.
+      </ul>
+      <p class="credit">Created by <a href="//twitter.com/s2tephen">Stephen Suen</a>. Inspired by Cody Johnston's <a href="//buzzfeedminusgifs.tumblr.com">buzzfeedminusgifs tumblr</a> and Aaron Bycoffe's <a href="//bycoffe.com/buzzcheat">BuzzCheat</a>.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+javascript:(function(){var o='';var i=0;$$('h2').each(function(el){var n=el.firstDescendant();if(n===null){return}else if(n.hasClassName('buzz_superlist_number_inline')){o+=el.innerHTML.slice(n.outerHTML.length);i++;if(i>5){o+='</p><p>';i=0}}});$$('.suplist_list_show')[0].update('<p>'+o.slice(1)+'</p>')})();
